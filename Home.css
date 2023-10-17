@@ -11,7 +11,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    position:relative;
    
 }
 
@@ -59,7 +59,7 @@ header{
 #mouse-scroll {
     position: absolute;
     bottom: 0;
-    left: 2%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -74,9 +74,9 @@ header{
     width: 5px; 
     height: 5px;
     -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-         transform: rotate(45deg);
-         transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
     border-right: 2px solid #000000; 
     border-bottom: 2px solid #000000;
     margin: 0 0 3px 5px;
@@ -145,7 +145,10 @@ header{
 
 /*projects section*/
 
-
+.containerTitle{
+  font-family: Blacksword;
+  padding-left: 30px;
+}
 
 /* Links */
 a {
@@ -191,9 +194,11 @@ img {
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.1;
-  text-decoration: underline;
-  color: var(--red);
+  
+
+  letter-spacing: 2px;
   font-family: SF pro;
+  font-weight: lighter;
 }
 
 .title .underline {
@@ -209,7 +214,9 @@ img {
   opacity: 0;
   animation: fadeIn 0.8s 0.6s ease forwards;
   padding-left:20px;
+  letter-spacing: 1px;
   font-family: SF pro;
+  font-weight: lighter;
 }
 
 /* Slider Item */
