@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+   
+}
+
+.logo{
+    font-family: Blacksword;
+}
+
+.aboutLink{
+    font-family: Blacksword;
+}
+
+.landingPage{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height:100vh;
+    padding-top: 100px;
+}
+
+.name{
+    font-family: Blacksword;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.title{
+    letter-spacing: 2px;
+    font-family: SF pro;
+    font-weight: lighter;
+    font-size: 90px;
+}
+
+.websiteTitle{
+    font-family: Blacksword;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+#mouse-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    transform: translateX(-50%);
+}
+
+#mouse-scroll div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mouse-scroll span{
+    display: block;
+    width: 5px; 
+    height: 5px;
+    -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+         transform: rotate(45deg);
+         transform: rotate(45deg);
+    border-right: 2px solid #000000; 
+    border-bottom: 2px solid #000000;
+    margin: 0 0 3px 5px;
+    
+  }
+#mouse-scroll .down-arrow-1 {
+    margin-top: 6px;
+  }
+#mouse-scroll .down-arrow-1, #mouse-scroll .down-arrow-2, #mouse-scroll .down-arrow-3 {
+    -webkit-animation: mouse-scroll 1s infinite; 
+      -moz-animation: mouse-scroll 1s infinite:
+  }
+#mouse-croll .down-arrow-1 {
+     -webkit-animation-delay: .1s; 
+     -moz-animation-delay: .1s;
+     -webkit-animation-direction: alternate;
+  }
+#mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s; 
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+  }
+#mouse-scroll .down-arrow-3 {
+     -webkit-animation-delay: .3s;
+     -moz-animation-dekay: .3s;
+     -webkit-animation-direction: alternate;
+  }
+  
+@-webkit-keyframes animated-mouse {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+@-webkit-keyframes mouse-scroll {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    } 
+  }
+@keyframes mouse-scroll {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
