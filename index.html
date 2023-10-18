@@ -18,7 +18,30 @@
     </header>
     <div class="landingPage">
         <h2 class="name">Kobe Shaw</h2>
-        <h1 class="title"> FrontEnd<br> Developer</h1>
+
+        <h1 class="title"> 
+          <span class='sr-only'>
+            FrontEnd
+          </span>
+          <span aria-hidden="true">
+            <span>Fr</span>
+            <span class='stretch-o'></span>
+            <span>ntEnd</span>
+          </span>
+        </h1>
+
+        <h1 class="title"> 
+          <span class='sr-only'>
+            Developer
+          </span>
+          <span aria-hidden="true">
+            <span>Devel</span>
+            <span class='stretch-o'></span>
+            <span>per</span>
+          </span>
+        </h1>
+
+
         <h2 class="websiteTitle">Portfolio</h2>
 
         <div id="mouse-scroll">
@@ -46,7 +69,7 @@
                   </div>
                   <div class="column-xs-12 column-md-10">
                     <div class="image-holder">
-                      <img src="https://source.unsplash.com/cddaZDt6uRw">
+                      <img src="./img/BitCoinNav-Header.jpg">
                     </div>
                     <div class="grid">
                       <div class="column-xs-12 column-md-9">
@@ -72,7 +95,7 @@
                   </div>
                   <div class="column-xs-12 column-md-10">
                     <div class="image-holder">
-                      <img src="https://source.unsplash.com/Pz3EHf-KJfc">
+                      <img src="./img/NuCampThumb.jpg">
                     </div>
                     <div class="grid">
                       <div class="column-xs-12 column-md-9">
@@ -98,7 +121,7 @@
                   </div>
                   <div class="column-xs-12 column-md-10">
                     <div class="image-holder">
-                      <img src="https://source.unsplash.com/peYW3VwICpE">
+                      <img src="./img/ArtLabHeader.jpg">
                     </div>
                     <div class="grid">
                       <div class="column-xs-12 column-md-9">
@@ -133,11 +156,13 @@
 
 
       <div class="contactForm">
-        <h1>Contact Me</h1>
-        <input placeholder="Name">
-        <input placeholder="Email" type="email">
-        <input class='message' placeholder="Message">
-        <button class="sendButton">Send!!</button>
+        <h1 class="contactTitle">Contact Me</h1>
+        <form action="contact.php" method="post">
+          <input type="text" name="name" placeholder="Name">
+          <input  type="email" name="email" placeholder="Email">
+          <input class='message' name='message' placeholder="Message"></input>
+          <button type='submit' class="sendButton">Send!!</button>
+        </form>
       </div>
 
       <footer>

@@ -1,7 +1,12 @@
 *{
     margin:0;
     padding:5px;  
-    background-color: rgb(255, 235, 218);
+}
+
+body{
+  background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38313c, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38333c, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header{
@@ -39,13 +44,77 @@ header{
     letter-spacing: 2px;
 }
 
-.title{
-    letter-spacing: 2px;
-    font-family: SF pro;
-    font-weight: lighter;
-    font-size: 90px;
-    text-decoration: none;
-    color: #000000;
+.title {
+  --color-one: hsl(294, 100%, 85%);
+  --color-two: linear-gradient(90deg, #ff00e8, #cf81ff, #001b62);
+  --stretch-multiplier: 5;
+  font-size: clamp(2rem, 14vmin, 8rem);
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  display: grid;
+  line-height: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+[aria-hidden] {
+  display: flex;
+  gap: 0.02ch;
+  align-items: center;
+  color: black;
+}
+
+.stretch-o {
+  height: 1.12ch;
+  width: calc(var(--stretch) * 1.16ch);
+  transform: translate(0, -0.01ch);
+  border: 0.25ch solid black;
+  border-radius: 1ch;
+  transition: width 0.2s;
+  position: relative;
+}
+
+.title {
+  --stretch: 1;
+}
+
+.title:hover {
+  --stretch: var(--stretch-multiplier);
+}
+
+.stretch-o:after,
+.stretch-o:before {
+  content: "";
+  border: 0.25ch solid var(--color);
+  position: absolute;
+  inset: -0.25ch;
+  border-radius: 1ch;
+  opacity: calc(-1 + var(--stretch));
+  transition: opacity 0.2s;
+}
+
+.stretch-o:before {
+  --color: var(--color-one);
+}
+
+.stretch-o:after {
+  --color: var(--color-two);
+  mask:
+    radial-gradient(
+      circle at top left,
+      black,
+      transparent
+    );
 }
 
 .websiteTitle{
@@ -489,7 +558,14 @@ button {
 
 /*contact section*/
 
-.contactForm{
+.contactTitle{
+  display: flex;
+  justify-content: center;
+  font-family: Blacksword;
+  padding-top: 80px;
+}
+
+form{
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -497,11 +573,20 @@ button {
   row-gap: 20px;
   font-family: SF pro;
   margin-bottom: 80px;
-  padding-top: 200px;
+  padding-top: 40px;
+
 }
 
 input{
   width:40%;
+  border-color: rgb(0, 0, 0);
+  background-color: rgba(128, 128, 128, 0.153);
+  color: #000000;
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder{
+  color: #000000;
 }
 
 .message{
