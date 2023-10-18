@@ -4,8 +4,6 @@
     background-color: rgb(255, 235, 218);
 }
 
-
-
 header{
     display: flex;
     flex-direction: row;
@@ -163,9 +161,6 @@ a:hover {
 i{
   color: #000000;
 }
-
-
-
 
 /* Images */
 img {
@@ -501,7 +496,7 @@ button {
   align-items: center;
   row-gap: 20px;
   font-family: SF pro;
-
+  margin-bottom: 80px;
   padding-top: 200px;
 }
 
@@ -517,6 +512,23 @@ input{
   border:black 2px solid;
   width:150px;
 }
+
+/*footer*/
+
+footer{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+i{
+  color: rgb(0, 0, 0);
+}
+
+
+
+
 
 
 
