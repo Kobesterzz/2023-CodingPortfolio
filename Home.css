@@ -45,7 +45,7 @@ header{
 }
 
 .title {
-  --color-one: hsl(17, 100%, 84%);
+  --color-one:  #ffbebe;  
   --color-two: linear-gradient(90deg, #ff00e8, #cf81ff, #001b62);
   --stretch-multiplier: 5;
   font-size: clamp(2rem, 14vmin, 8rem);
@@ -216,7 +216,7 @@ header{
 
 .containerTitle{
   font-family: Blacksword;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 /* Links */
@@ -259,12 +259,8 @@ img {
   display: inline-block;
   font-size: 2rem;
   font-weight: 500;
-  line-height: 1.1;
-  
-
   letter-spacing: 2px;
   font-family: SF pro;
-  font-weight: lighter;
 }
 
 .title .underline {
@@ -282,7 +278,7 @@ img {
   padding-left:20px;
   letter-spacing: 1px;
   font-family: SF pro;
-  font-weight: lighter;
+ 
 }
 
 /* Slider Item */
@@ -334,12 +330,16 @@ button {
 
 .controls .previous {
   border: 1px solid black;
+  padding-bottom: 16px;
+  padding-left: 10px;
 }
 
 .controls .next {
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  padding-bottom: 16px;
+  padding-right: 10px;
 }
 
 .controls .icon {
