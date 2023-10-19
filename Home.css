@@ -45,7 +45,7 @@ header{
 }
 
 .title {
-  --color-one: hsl(294, 100%, 85%);
+  --color-one: hsl(17, 100%, 84%);
   --color-two: linear-gradient(90deg, #ff00e8, #cf81ff, #001b62);
   --stretch-multiplier: 5;
   font-size: clamp(2rem, 14vmin, 8rem);
@@ -75,10 +75,10 @@ header{
 }
 
 .stretch-o {
-  height: 1.12ch;
-  width: calc(var(--stretch) * 1.16ch);
+  height: .9ch;
+  width: calc(var(--stretch) * .9ch);
   transform: translate(0, -0.01ch);
-  border: 0.25ch solid black;
+  border: 0.24ch solid rgb(0, 0, 0);
   border-radius: 1ch;
   transition: width 0.2s;
   position: relative;
@@ -104,11 +104,11 @@ header{
 }
 
 .stretch-o:before {
-  --color: var(--color-one);
+  --color: var(--color-two);
 }
 
 .stretch-o:after {
-  --color: var(--color-two);
+  --color: var(--color-one);
   mask:
     radial-gradient(
       circle at top left,
@@ -116,6 +116,8 @@ header{
       transparent
     );
 }
+
+
 
 .websiteTitle{
     font-family: Blacksword;
