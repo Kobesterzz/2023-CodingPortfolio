@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="./Home.css">
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 
-    <header>
+    <header data-aos="fade-down">
         <a href="./index.html"><h1 class="logo">KS</h1></a>
 
         <a href="./About.html"><h2 class="aboutLink">About</h2></a>
     </header>
-    <div class="landingPage">
+
+    <div class="landingPage" >
+      <div class='landingWord' data-aos="fade-down">
         <h2 class="name">Kobe Shaw</h2>
 
         <h1 class="title"> 
@@ -41,10 +45,10 @@
           </span>
         </h1>
 
-
         <h2 class="websiteTitle">Portfolio</h2>
+      </div>
 
-        <div id="mouse-scroll">
+        <div id="mouse-scroll" >
             <div>
                 <span class="down-arrow-1"></span>
                 <span class="down-arrow-2"></span>
@@ -53,7 +57,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <h1 class="containerTitle">Projects</h1>
       <div class="grid">
         <div class="column-xs-12">
@@ -100,7 +104,7 @@
                   <div class="grid">
                     <div id='nameAndDes' class="column-xs-12 column-md-9">
                       <div class="intro show-mobile">
-                        <a href="">
+                        <a href="./NuCamp.html">
                           <h1 class="Protitle"><span class="underline">NuCamp</span></h1>
                         </a>
                       </div>
@@ -156,7 +160,7 @@
     </div>
 
 
-      <div class="contactForm">
+      <div class="contactForm" data-aos="fade-down" >
         <h1 class="contactTitle">Contact Me</h1>
         <form action="contact.php" method="post">
           <input type="text" name="name" placeholder="Name">
@@ -166,7 +170,7 @@
         </form>
       </div>
 
-      <footer>
+      <footer >
         <a><h1 class="logo">KS</h1></a>
 
         <div>
@@ -178,4 +182,9 @@
 
 
 </body>
+
+<script>
+  AOS.init();
+</script>
+
 </html>

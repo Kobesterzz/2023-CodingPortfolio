@@ -55,6 +55,13 @@ header {
     padding-top: 100px;
 }
 
+.landingWord{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .name{
     font-family: Blacksword;
     font-size: 40px;

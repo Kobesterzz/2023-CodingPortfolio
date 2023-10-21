@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NuCamp</title>
+    <link rel="stylesheet" href="./NuCamp.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     
+    <header>
+        <a href="./index.html"><h1 class="logo">KS</h1></a>
+        <a href="./About.html"><h2 class="aboutLink">About</h2></a>
+    </header>
+
+    <div class="landingPage">
+        <div data-aos="fade-up">
+            <h1 class="title"> NuCamp </h1>
+       </div>
+
+       
+
+       <div data-aos="fade-up">
+         <h2 class="description"> 
+            This is a personal project for a campsite ground that I made. 
+            You can do many things like reserve a campsite, login and even leave review on the campsite and 
+            comment. I wanted to practice react native so this was a perfect desicion because I got to work on 
+            JSON servers and animations ect. </h2>
+       </div>
+
+       <div data-aos="fade-up">
+        <a><i class="fa fa-link" style="color: #000000;"></i></a>
+       </div>
+    </div>
+
+    <div class="bottom" data-aos="fade-right">
+        <div class="firstRow">
+            <img class='slimPic' src="./img/CampsiteDirectory- NuCamp.jpg">
+            <img class='longPic' src="./img/previewed-Nucamp.png">
+            <img class='slimPic' src="./img/About - NuCamp.jpg">
+        </div>
+        <div class="secondRow" data-aos="fade-left">
+            <video width="850"  autoplay muted>
+                <source src="./img/animatedNucamp.mp4">
+            </video>
+        </div>
+    </div>
 </body>
+
+<script>
+    AOS.init();
+</script>
 </html>
