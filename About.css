@@ -1,54 +1,71 @@
 *{
-    margin:0;
-    padding:5px;  
+  margin:0;
+  padding:5px;
+}
+
+.background{
+  height:100vh;
+  z-index:-10;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:0;
+  left:0;
+  padding:0;
+}
+
+.blurlayer{
+  z-index: -1;
+  height:100vh;
+  width: 100vw;
+  background-color: #0000006f;
+  position:fixed;
+  top:0;
+  left:0;
+  padding:0;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+width: 0px;
+height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(90, 90, 90, 0);
+background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(255, 220, 220);
+background: transparent;
 }
 
-body{
-  background: #E6DADA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38313c, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38333c, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-a{
-  text-decoration: none;
-}
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px; 
-  
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 10;
+padding: 10px; /* Add padding as needed */
+background: linear-gradient(rgba(0, 0, 0, 0.386) 30%,rgba(103, 99, 99, 0.131),rgba(255, 255, 255, 0));
+
 }
 
 .logo{
-    font-family: Blacksword;
-    color: #000000;
+font-family: Blacksword;
+color: #ffffff;
 }
 
 .aboutLink{
-    font-family: Blacksword;
-    color: #000000;
-    text-decoration: none;
-    padding-right:25px;
+font-family: Blacksword;
+color: #ffffff;
+padding-right:25px
 }
+i {
+    color: #ffffff;
+  }
 
 .topPart{
   display: flex;
@@ -56,11 +73,13 @@ header {
   align-items: center;
   flex-direction: row;
   column-gap: 280px;
+  color: #ffffff;
 }
 
 .name{
   font-family: Blacksword;
   font-size: 80px;
+
 }
 
 .imageCropper{
@@ -70,27 +89,29 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 .HeadPic{
-   display: inline;
+  display: inline;
   margin: 0 auto;
   margin-left: -19%; /*centers the image*/
   height: 900px;
   width: auto;
+ 
 }
 
 .line {
   margin-top:20px;
   border:none;
-  background-color: #000000;
+  background-color: #ffffff;
   height:0px
 }
 
 .resume{
   font-size: 30px;
   text-decoration: underline;
+  color: #ffffff;
 }
 
 .icons{
@@ -99,7 +120,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 40px;
-  color:black;
+  color:rgb(255, 255, 255);
 }
 
 .bottom{
@@ -110,6 +131,7 @@ header {
   row-gap: 30px;
   margin-top: 50px;
   font-family: SF pro;
+  color: #ffffff;
 }
 
 .aboutMe{
@@ -121,5 +143,6 @@ header {
 
 .paragraph{
   width:50%;
+  margin-bottom: 30px;
 }
 

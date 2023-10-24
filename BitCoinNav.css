@@ -1,54 +1,71 @@
 *{
-    margin:0;
-    padding:5px;  
+  margin:0;
+  padding:5px;
+}
+
+.background{
+  height:100vh;
+  z-index:-10;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:0;
+  left:0;
+  padding:0;
+}
+
+.blurlayer{
+  z-index: -1;
+  height:100vh;
+  width: 100vw;
+  background-color: #0000006f;
+  position:fixed;
+  top:0;
+  left:0;
+  padding:0;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+width: 0px;
+height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(90, 90, 90, 0);
+background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(255, 220, 220);
+background: transparent;
 }
 
-body{
-  background: #E6DADA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38313c, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38333c, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  padding: 10px; /* Add padding as needed */
-  
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 10;
+padding: 10px; /* Add padding as needed */
+background: linear-gradient(rgba(0, 0, 0, 0.386) 30%,rgba(103, 99, 99, 0.131),rgba(255, 255, 255, 0));
+
 }
 
 .logo{
-    font-family: Blacksword;
-    color: #000000;
-   
+font-family: Blacksword;
+color: #ffffff;
 }
 
 .aboutLink{
-    font-family: Blacksword;
-    color: #000000;
-    margin-right: 20px;
+font-family: Blacksword;
+color: #ffffff;
+padding-right:25px
 }
 
 i {
-    color: #c02c2c;
+    color: #ffffff;
   }
 
 a{
@@ -62,6 +79,7 @@ a{
     flex-direction: column;
     row-gap: 80px;
     height:100vh;
+    color:white;
 }
 
 .title{
