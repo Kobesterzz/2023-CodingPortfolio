@@ -49,6 +49,7 @@ left: 0;
 width: 100%;
 z-index: 10;
 padding: 10px; /* Add padding as needed */
+background: linear-gradient(rgba(0, 0, 0, 0.386) 30%,rgba(103, 99, 99, 0.131),rgba(255, 255, 255, 0));
 
 }
 
@@ -260,6 +261,7 @@ margin-top: 6px;
 .containerTitle {
 font-family: Blacksword;
 padding-left: 35px;
+color:aliceblue
 }
 
 /* Links */
@@ -328,12 +330,12 @@ font-size: 2rem;
 font-weight: 500;
 letter-spacing: 2px;
 font-family: SF pro;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 margin: 0; /* Add to reset margin */
 }
 
 #nameAndDes {
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 padding: 5px; /* Add some padding */
 text-align: center; /* Center text */
 
@@ -402,15 +404,15 @@ padding-right: 30px;
 }
 
 .controls .previous {
-border: 2px solid rgb(0, 0, 0);
+border: 2px solid rgb(255, 255, 255);
 padding-bottom: 16px;
 padding-left: 10px;
 }
 
 .controls .next {
-border-top: 2px solid rgb(0, 0, 0);
-border-right: 2px solid rgb(0, 0, 0);
-border-bottom: 2px solid rgb(0, 0, 0);
+border-top: 2px solid rgb(255, 255, 255);
+border-right: 2px solid rgb(255, 255, 255);
+border-bottom: 2px solid rgb(255, 252, 252);
 padding-bottom: 16px;
 padding-right: 10px;
 }
@@ -432,7 +434,7 @@ height: 20px;
 border-top: solid 1px currentColor;
 border-right: solid 1px currentColor;
 transform: rotate(-135deg);
-color:rgb(0, 0, 0);
+color:rgb(255, 255, 255);
 }
 
 .controls .icon.arrow-right::before {
@@ -445,7 +447,7 @@ height: 20px;
 border-top: solid 1px currentColor;
 border-right: solid 1px currentColor;
 transform: rotate(45deg);
-color:rgb(0, 0, 0);
+color:rgb(255, 255, 255);
 }
 
 .controls .icon.transition {
@@ -640,6 +642,7 @@ display: flex;
 justify-content: center;
 font-family: Blacksword;
 padding-top: 150px;
+color:white;
 }
 
 form{
@@ -656,14 +659,14 @@ padding-top: 40px;
 
 input{
 width:40%;
-border-color: rgb(0, 0, 0);
+border-color: rgb(255, 255, 255);
 background-color: rgba(128, 128, 128, 0.153);
-color: #000000;
+color: #ffffff;
 backdrop-filter: blur(10px);
 }
 
 input::placeholder{
-color: #000000;
+color: #ffffff;
 }
 
 .message{
@@ -671,8 +674,9 @@ height:20vh;
 }
 
 .sendButton{
-border:black 2px solid;
+border:rgb(255, 255, 255) 2px solid;
 width:150px;
+color: #ffffff;
 }
 
 /*footer*/
@@ -685,5 +689,5 @@ justify-content: space-between;
 }
 
 i{
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 }
