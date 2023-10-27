@@ -114,3 +114,9 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 1550px){
+.firstRow{
+    flex-direction: column;
+}
+}
