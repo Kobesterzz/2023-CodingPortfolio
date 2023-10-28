@@ -147,3 +147,13 @@ i {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1460px){
+  .topPart{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .imageCropper{
+    margin-top: 0;
+  }
+  }
