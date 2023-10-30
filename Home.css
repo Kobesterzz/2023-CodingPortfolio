@@ -299,8 +299,6 @@ position: relative;
 overflow: hidden; /* Ensure the image doesn't overflow its container */
 }
 
-
-
 .image-holder {
 position: relative;
 display: flex;
@@ -356,9 +354,6 @@ animation: fadeIn 0.8s 0.6s ease forwards;
 letter-spacing: 1px;
 font-family: SF pro;
 }
-
-
-
 
 /* Slider Item */
 .slider-item {
@@ -636,8 +631,6 @@ position: absolute;
 white-space: nowrap;
 width: 1px;
 }
-
-
 
 /*contact section*/
 
