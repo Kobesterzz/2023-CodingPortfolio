@@ -290,7 +290,7 @@ height: 43vh;
 object-fit: cover;
 position: relative;
 z-index: -2;
-
+border-radius: 15px;
 }
 
 /* Add position: relative to the parent container */
