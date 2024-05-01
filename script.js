@@ -1,4 +1,4 @@
-const items = document.querySelectorAll('.slider-item');
+/*const items = document.querySelectorAll('.slider-item');
 const itemCount = items.length;
 const nextItem = document.getElementById('next');
 const previousItem = document.querySelector('.previous');
@@ -50,7 +50,17 @@ nextItem.addEventListener('click', showNextItem);
 previousItem.addEventListener('click', showPreviousItem);
 document.addEventListener('keydown', keyPress);
 navItem.addEventListener('click', toggleNavigation);
+*/
 
 
 
 
+const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
